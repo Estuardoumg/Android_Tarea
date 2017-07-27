@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="curso.umg.gt.umgapplogin.StudentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido Estudiante"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            app:srcCompat="@mipmap/umg" />
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO ESTUDIANTE"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese su correo electronico"
+        android:gravity="left"/>
+
+     <EditText
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:hint="correo electronico"
+         android:id="@+id/ete3"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese Numero Telefonico"
+            android:gravity="left"/>
+
+        <EditText
+            android:id="@+id/ete4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="numero telefonico" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la Carrera y plan de estudios de su Interes"
+            android:gravity="left"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp1"
+            >
+        </Spinner>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan diario"
+                android:id="@+id/rb1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan in de semana"
+                android:id="@+id/rb2"/>
+        </RadioGroup>
+
+      <Button
+          android:id="@+id/btnenviar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Enviar"
+          />
+
+        <ListView
+            android:id="@+id/lve1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

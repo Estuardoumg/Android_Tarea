@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UMGAppLogin</string>
+    <string name="txt1">usuario:</string>
+    <string name="txt2">password:</string>
+    <string name="ok">Acceder</string>
+     <string name="ete3">correo electronico:</string>
+    <string name="btnenviar">Enviar:</string>
+
+
+</resources>
